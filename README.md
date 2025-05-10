@@ -33,3 +33,14 @@ a*
 *b*
 *c#
 ```
+Для разных команд print() можно задавать разные параметры sep и end.
+```python
+arg1 = 'Hello'
+sep1 = '_-_'
+end2 = '+++'
+
+print(arg1, 'everyone', sep=sep1, end='! ')
+print('How', 'are', 'you', 'in', '2024?', sep=' ', end=end2)
+>>>
+Hello_-_everyone! How are you in 2024?+++
+```
