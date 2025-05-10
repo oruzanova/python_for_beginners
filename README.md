@@ -63,3 +63,6 @@ name1, name2 = name2, name1
 >>>
 Gvido
 ```
+
+### Арифметика
+
