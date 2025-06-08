@@ -455,5 +455,7 @@ for i in range(3):
 | s[3]   | h   | четвертый символ строки   |
 | s[4]   |	o   | пятый символ строки   |
 | s[5]   |	n   |	шестой символ строки   |
+![image](https://github.com/user-attachments/assets/b08c04e2-bf1e-49d7-9fb9-b45482ed4de1)
+![image](https://github.com/user-attachments/assets/896ed774-562e-44b0-ba53-614b0ea1f54c)
 
 
