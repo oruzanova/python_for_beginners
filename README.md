@@ -461,5 +461,8 @@ for i in range(3):
 Таким образом получается:     
 ![image](https://github.com/user-attachments/assets/1238df95-40fd-49c6-9534-bda5619aecd3)
 
+### Итерирование строк
+![image](https://github.com/user-attachments/assets/553fde32-4f08-4ed4-b829-b4844c1d79af)
+![image](https://github.com/user-attachments/assets/1bc179ee-3abc-4d74-ae25-3273ac2f5d08)
 
 
