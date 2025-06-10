@@ -465,4 +465,18 @@ for i in range(3):
 ![image](https://github.com/user-attachments/assets/553fde32-4f08-4ed4-b829-b4844c1d79af)
 ![image](https://github.com/user-attachments/assets/1bc179ee-3abc-4d74-ae25-3273ac2f5d08)
 
+### Срезы строк   
+С помощью среза мы можем получить несколько символов исходной строки, создав диапазон индексов разделенных двоеточием s[x:y].      
+```python
+s = 'abcdefghij'
+print(s[2:5])
+print(s[0:6])
+print(s[2:7])
+>>>>>>>>>
+cde
+abcdef
+cdefg
+```
+![image](https://github.com/user-attachments/assets/4c760ee8-9436-4319-baa0-c000e56dd47c)
 
+При построении среза s[x:y] первое число – это то место, где начинается срез (включительно), а второе – это место, где заканчивается срез (невключительно). Разрезая строки, мы создаем подстроку, которая по сути является строкой внутри другой строки.   
