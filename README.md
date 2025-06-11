@@ -484,5 +484,8 @@ cdefg
 **При использовании отрицательных индексов первый параметр среза должен быть меньше второго, либо должен быть пропущен.**    
 **Удалить из строки последний символ можно при помощи среза s[:-1].**    
 ![image](https://github.com/user-attachments/assets/c7dd14d0-ac30-4b94-aa2f-61615e93bd57)
+![image](https://github.com/user-attachments/assets/404fa15c-1ddf-4704-a278-2d18d23a134e)
+![image](https://github.com/user-attachments/assets/1be94d79-eacc-4780-9d16-76406c152c3a)
+
 
 
