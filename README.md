@@ -487,5 +487,43 @@ cdefg
 ![image](https://github.com/user-attachments/assets/404fa15c-1ddf-4704-a278-2d18d23a134e)
 ![image](https://github.com/user-attachments/assets/1be94d79-eacc-4780-9d16-76406c152c3a)
 
-
-
+### Методы строк
+Метод — функция, применяемая к объекту. В данном случае к строке. Метод вызывается в виде **имя_объекта.имя_метода(параметры).**   
+Например, s.find('e') — это применение к строке s метода find с одним параметром 'e'.   
+**Конвертация регистра**
+Метод capitalize() возвращает копию строки s, в которой первый символ имеет верхний регистр, а все остальные символы имеют нижний регистр.  
+```python
+s = 'foO BaR BAZ quX'
+print(s.capitalize())
+>>>>>>>>>
+Foo bar baz qux
+```
+Метод swapcase() возвращает копию строки s, в которой все символы, имеющие верхний регистр, преобразуются в символы нижнего регистра и наоборот.
+```python
+s = 'FOO Bar 123 baz qUX'
+print(s.swapcase())
+>>>>>>>>>
+foo bAR 123 BAZ Qux
+```
+Метод title() возвращает копию строки s, в которой первый символ каждого слова переводится в верхний регистр.
+```python
+s = 'the sun also rises'
+print(s.title())
+>>>>>>>>>
+The Sun Also Rises
+```
+Метод lower() возвращает копию строки s, в которой все символы имеют нижний регистр.
+```python
+s = 'FOO Bar 123 baz qUX'
+print(s.lower())
+>>>>>>>>>
+foo bar 123 baz qux
+```
+Метод upper() возвращает копию строки s, в которой все символы имеют верхний регистр.
+```python
+s = 'FOO Bar 123 baz qUX'
+print(s.upper())
+>>>>>>>>>
+FOO BAR 123 BAZ QUX
+```
+![image](https://github.com/user-attachments/assets/e9ec9e84-b70d-4d86-88c7-1aca3a533992)
