@@ -527,3 +527,89 @@ print(s.upper())
 FOO BAR 123 BAZ QUX
 ```
 ![image](https://github.com/user-attachments/assets/e9ec9e84-b70d-4d86-88c7-1aca3a533992)
+
+**Поиск и замена**    
+Каждый метод в этой группе поддерживает необязательные аргументы <start> и <end>. Как и в строковых срезах, действие метода ограничено частью исходной строки, начинающейся с позиции символа <start> и продолжающейся вплоть до позиции символа <end>, но не включающей её. Если параметр <start> указан, а параметр <end> нет, то метод применяется к части исходной строки от <start> до конца строки. Если параметры не заданы, то подразумевается, что <start> = 0, <end> = len(s).     
+
+Метод count(<sub>, <start>, <end>) считает количество непересекающихся вхождений подстроки <sub> в исходную строку s.   
+```python
+s = 'foo goo moo'
+print(s.count('oo'))
+print(s.count('oo', 0, 8))  # подсчет с 0 по 7 символ
+>>>>>>>>>
+3
+2
+```
+Метод startswith(<prefix>, <start>, <end>) определяет, начинается ли исходная строка s подстрокой <prefix>. Метод возвращает значение True, если исходная строка начинается с подстроки <prefix>, или False в противном случае.   
+```python
+s = 'foobar'
+print(s.startswith('foo'))
+print(s.startswith('baz'))
+>>>>>>>>>
+True
+False
+```
+Метод endswith(<suffix>, <start>, <end>) определяет, оканчивается ли исходная строка s подстрокой <suffix>. Метод возвращает значение True, если исходная строка оканчивается на подстроку <suffix>, или False в противном случае.  
+
+```python
+s = 'foobar'
+print(s.endswith('bar'))
+print(s.endswith('baz'))
+>>>>>>>>>
+True
+False
+```
+Метод find(<sub>, <start>, <end>) находит индекс первого вхождения подстроки <sub> в исходной строке s. Если строка s не содержит подстроки <sub>, то метод возвращает значение -1. Мы можем использовать данный метод наравне с оператором in для проверки: содержит ли заданная строка некоторую подстроку или нет.
+
+```python
+s = 'foo bar foo baz foo qux'
+print(s.find('foo'))
+print(s.find('bar'))
+print(s.find('qu'))
+print(s.find('python'))
+>>>>>>>>>
+0
+4
+20
+-1
+```
+Метод index(<sub>, <start>, <end>) идентичен методу find(<sub>, <start>, <end>), за тем исключением, что он вызывает ошибку ValueError: substring not found во время выполнения программы, если подстрока <sub> не найдена.     
+Метод rindex(<sub>, <start>, <end>) идентичен методу index(<sub>, <start>, <end>), за тем исключением, что он ищет первое вхождение подстроки <sub>, начиная с конца строки s.   
+![image](https://github.com/user-attachments/assets/908fae41-4224-4bef-a71c-27f25b9f420c)
+
+Метод strip() возвращает копию строки s, у которой удалены все пробелы, стоящие в начале и конце строки.
+```python
+s = '     foo bar foo baz foo qux      '
+print(s.strip())
+>>>>>>>>>
+foo bar foo baz foo qux
+```
+Метод lstrip() возвращает копию строки s, у которой удалены все пробелы, стоящие в начале строки.
+```python
+s = '     foo bar foo baz foo qux      '
+print(s.lstrip())
+>>>>>>>>>
+foo bar foo baz foo qux⎵⎵⎵⎵⎵⎵
+```
+Метод rstrip() возвращает копию строки s, у которой удалены все пробелы, стоящие в конце строки.
+```python
+s = '      foo bar foo baz foo qux      '
+print(s.rstrip())
+>>>>>>>>>
+⎵⎵⎵⎵⎵⎵foo bar foo baz foo qux
+```
+Метод replace(<old>, <new>) возвращает копию s со всеми вхождениями подстроки <old>, заменёнными на <new>.
+```python
+s = 'foo bar foo baz foo qux'
+print(s.replace('foo', 'grault'))
+>>>>>>>>>
+grault bar grault baz grault qux
+```
+Метод replace() может принимать необязательный третий аргумент <count>, который определяет количество замен.  
+```python
+s = 'foo bar foo baz foo qux'
+print(s.replace('foo', 'grault', 2))
+>>>>>>>>>
+grault bar grault baz foo qux
+```
+![image](https://github.com/user-attachments/assets/7dc954ee-6fc7-4fd7-891e-56ca3886aaaa)
