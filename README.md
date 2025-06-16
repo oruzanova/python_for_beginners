@@ -697,3 +697,55 @@ True
 False
 ```
 Для пустой строки метод isspace() также возвращает False, так как в этом случае строка не состоит из пробельных символов.    
+
+**Форматирование строк**    
+Хранить строки в переменных удобно, но часто бывает необходимо собирать строки из других объектов (строк, чисел и т.д.) и выполнять с ними нужные манипуляции. Для этой цели можно воспользоваться механизмом форматирования строк(строковый метод format())    
+```python
+birth_year = 1992
+name = 'Timur'
+profession = 'math teacher'
+text = 'My name is {}, I was born in {}, I work as a {}.'.format(name, birth_year, profession)
+
+print(text)
+>>>>>>>>>
+My name is Timur, I was born in 1992, I work as a math teacher.
+```
+Мы можем использовать одно и то же число в нескольких заполнителях или не использовать совсем, а также мы можем использовать числа в разном порядке.   
+```python
+name = 'Timur'
+city = 'Moscow'
+text1 = 'My name is {0}-{0}-{0}!'.format(name, city)
+text2 = '{1} is my city and {0} is my name!'.format(name, city)
+
+print(text1)
+print(text2)
+>>>>>>>>>
+My name is Timur-Timur-Timur!
+Moscow is my city and Timur is my name!
+```
+
+**f-строки**    
+Если поставить перед строкой префикс f, в заполнители можно будет включить код, например, имя переменной или любые другие выражения. f-строки обеспечивают чистый и интуитивно понятный способ форматирования строк.     
+```python
+first_name = 'Taylor'
+last_name = 'Swift'
+country = 'USA'
+birth_date = '1989/12/13'
+birth_place = 'West Reading, Pennsylvania'
+text = f'{first_name} {last_name} is a very famous singer from the {country}. She was born on {birth_date} in {birth_place}.'
+
+print(text)
+```
+На место заполнителя {first_name} встает значение переменной first_name, на место заполнителя {last_name} встает значение переменной last_name и т.д.       
+Помимо переменных в заполнителях f-строк мы можем использовать выражения.
+```python
+print(f'5 + 2 = {5 + 2}')
+print(f'5 - 2 = {5 - 2}')
+print(f'5 * 2 = {5 * 2}')
+print(f'5 / 2 = {5 / 2}')
+>>>>>>>>>
+5 + 2 = 7
+5 - 2 = 3
+5 * 2 = 10
+5 / 2 = 2.5
+```
