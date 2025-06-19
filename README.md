@@ -806,3 +806,5 @@ numbers[4] == 10.
 ![image](https://github.com/user-attachments/assets/8da8e2d2-6863-443f-a37f-89c8d241b3dc)
 ![image](https://github.com/user-attachments/assets/75a6d011-8a05-40a5-a354-5be11301242a)
 
+### Встроенная функция list
+![image](https://github.com/user-attachments/assets/13baa988-eba7-439b-a85b-7d07a35955c1)
