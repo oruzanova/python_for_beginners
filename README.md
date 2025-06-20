@@ -808,3 +808,41 @@ numbers[4] == 10.
 
 ### Встроенная функция list
 ![image](https://github.com/user-attachments/assets/13baa988-eba7-439b-a85b-7d07a35955c1)
+
+### Основы работы со списками
+Функция len() - длина списка      
+```python
+numbers = [2, 4, 6, 8, 10]
+languages = ['Python', 'C#', 'C++', 'Java']
+
+print(len(numbers))      # выводим длину списка numbers
+print(len(languages))    # выводим длину списка languages
+
+print(len(['apple', 'banana', 'cherry']))   # выводим длину списка, состоящего из 3 элементов
+>>>>>>>>>
+5
+4
+3
+```
+**Оператор in позволяет проверить, содержит ли список некоторый элемент.**
+```python
+numbers = [2, 4, 6, 8, 10]
+
+if 2 in numbers:
+    print('Список numbers содержит число 2')
+else:
+    print('Список numbers не содержит число 2')
+>>>>>>>>>
+Список numbers содержит число 2
+```
+В списках индексация, срезы, конкатенация и умножение аналогично строкам, только тут вместо символов строки элементы списка.     
+Для изменения целого диапазона элементов списка можно использовать срезы. Например, если мы хотим перевести на русский язык названия фруктов 'banana', 'cherry', 'kiwi', то это можно сделать с помощью среза.
+```python
+fruits = ['apple', 'apricot', 'banana', 'cherry', 'kiwi', 'lemon', 'mango']
+fruits[2:5] = ['банан', 'вишня', 'киви']
+
+print(fruits)
+>>>>>>>>>
+['apple', 'apricot', 'банан', 'вишня', 'киви', 'lemon', 'mango']
+```
+![image](https://github.com/user-attachments/assets/91ed5cbe-44d9-4bb6-9e12-e29a9921a070)
